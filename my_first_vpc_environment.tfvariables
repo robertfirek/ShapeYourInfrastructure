@@ -1,0 +1,34 @@
+# Environment name
+environment_name = "my_first_vpc_environment"
+
+# Provider
+provider.access_key = "[SECRET]"
+provider.secret_key = "[SECRET"
+provider.region = "eu-west-1"
+
+# VPC
+vpc.owner_id                  = "[SECRET]"
+vpc.cidr_block                = "10.0.0.0/16"
+
+vpc_public_subnet.cidr_block         = "10.0.0.0/24"
+vpc_public_subnet.availability_zone  = "eu-west-1a"
+
+vpc_private_subnet.cidr_block        = "10.0.1.0/24"
+vpc_private_subnet.availability_zone = "eu-west-1a"
+
+# Instances
+nat.key_name                = "my_first_vpc_environment"
+nat.availability_zone       = "eu-west-1a"
+
+web-proxy.key_name          = "my_first_vpc_environment"
+web-proxy.availability_zone = "eu-west-1a"
+
+database.key_name           = "my_first_vpc_environment"
+database.availability_zone  = "eu-west-1a"
+
+services.key_name           = "my_first_vpc_environment"
+services.availability_zone  = "eu-west-1a"
+
+
+
+
